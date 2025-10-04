@@ -156,6 +156,24 @@ public class ManageStudent {
         System.out.println("== All Students ==");
         for (Student s : students) System.out.println(s);
 
+        // 11) School representation
+        Student[][] school = new Student[2][3];
+        school[0][0]=new Student(1,"Ayoub",19,12);
+        school[0][1]=new Student(2,"Walid",19,20);
+        school[0][2]=new Student(3,"Yahya",19,19);
+        school[1][0]=new Student(4,"Omar",19,16);
+        school[1][1]=new Student(5,"Zineb",19,13);
+        school[1][2]=new Student(6,"Salma",19,20);
+        System.out.println("== School ===");
+        System.out.println("Classroom 1:");
+        for (Student s : school[0]){
+            System.out.println(s.getName());
+        }
+        System.out.println("Classroom 2:");
+        for (Student s : school[1]){
+            System.out.println(s.getName());
+        }
+
     }
 }
 
